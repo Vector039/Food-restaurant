@@ -1,10 +1,14 @@
 import React from 'react'
 import ProfilePic from '../Assets/john-doe-image.png'
 import {AiFillStar} from "react-icons/ai"
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 const Testimonials = () => {
   return (
-    <div className='work-section-wrapper'>
+    <>
+      <Navbar/>
+      <div className='work-section-wrapper'>
         <div className="work-section-top">
             <p className="primary-subheading">Testimonials</p>
             <h1 className="primary-heading">What They Are Saying</h1>
@@ -24,7 +28,9 @@ const Testimonials = () => {
         </div>
         <h2>John Doe</h2>
         </div>
-    </div>
+      </div>
+      <Footer/>
+    </>
   )
 }
 
